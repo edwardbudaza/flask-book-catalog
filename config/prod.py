@@ -1,4 +1,6 @@
+import os
+
 DEBUG = False
 SECRETE_KEY='topsecrete'
-SQLALCHEMY_DATABASE_URI='postgresql://postgres:pe86mfog09b5546@localhost/catalog_db'
+SQLALCHEMY_DATABASE_URI=os.environ['DATABASE_URL']
 SQLALCHEMY_TRACK_MODIFICATIONS=False
